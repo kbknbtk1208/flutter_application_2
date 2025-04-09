@@ -1,7 +1,23 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  // Make main async
+  WidgetsFlutterBinding.ensureInitialized(); // Ensure Flutter binding is initialized
+  await EasyLocalization.ensureInitialized(); // Ensure EasyLocalization is initialized
+
+  runApp(
+    EasyLocalization(
+      // Wrap app with EasyLocalization
+      supportedLocales: const [
+        Locale('en', 'US'),
+        Locale('ja', 'JP'),
+      ], // Supported locales
+      path: 'assets/translations', // Path to translation files
+      fallbackLocale: const Locale('en', 'US'), // Fallback locale
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +27,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      // Use MaterialApp instead of MaterialApp.router for simplicity here
+      localizationsDelegates:
+          context.localizationDelegates, // Add localization delegates
+      supportedLocales: context.supportedLocales, // Add supported locales
+      locale: context.locale, // Add current locale
+      // title: 'Flutter Demo', // Remove original title
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -30,13 +51,13 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(), // Remove title from MyHomePage
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({super.key}); // Remove title requirement
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -47,7 +68,7 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  final String title;
+  // final String title; // Remove title field
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
@@ -83,7 +104,26 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
-        title: Text(widget.title),
+        title: Text('appTitle'.tr()), // Use translated title
+        actions: <Widget>[
+          // Add actions for language switching
+          TextButton(
+            onPressed: () {
+              context.setLocale(
+                const Locale('en', 'US'),
+              ); // Set locale to English
+            },
+            child: const Text('EN'),
+          ),
+          TextButton(
+            onPressed: () {
+              context.setLocale(
+                const Locale('ja', 'JP'),
+              ); // Set locale to Japanese
+            },
+            child: const Text('JA'),
+          ),
+        ],
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
