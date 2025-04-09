@@ -1,10 +1,12 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
 
 void main() async {
   // Make main async
   WidgetsFlutterBinding.ensureInitialized(); // Ensure Flutter binding is initialized
   await EasyLocalization.ensureInitialized(); // Ensure EasyLocalization is initialized
+  await Firebase.initializeApp(); // Initialize Firebase
 
   runApp(
     EasyLocalization(
