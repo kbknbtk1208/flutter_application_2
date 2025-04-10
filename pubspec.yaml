@@ -37,6 +37,7 @@ dependencies:
   easy_localization: ^3.0.7 # Add easy_localization
   firebase_core: ^3.1.1 # Add firebase_core
   http: ^1.0.0
+  flutter_dotenv: ^5.1.0 # Add flutter_dotenv
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -66,6 +67,7 @@ flutter:
     - assets/images/preference/
     - assets/preference_images.json
     - assets/japan_culture.json
+    - .env # Add .env file to assets
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

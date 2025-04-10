@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart'; // Import flutter_dotenv
 import 'plan_detail_screen.dart';
 // import '../models/suggestion.dart'; // モデルクラスを使う場合
 
@@ -30,7 +31,10 @@ class _SuggestionScreenState extends State<SuggestionScreen> {
       _error = null;
     });
 
-    final url = Uri.parse('http://localhost:3050'); // サーバーのエンドポイント
+    // .envファイルからベースURLを取得。nullの場合はデフォルト値を使用
+    final baseUrl =
+        dotenv.env['MOCK_SERVER_BASE_URL'] ?? 'http://localhost:3050';
+    final url = Uri.parse(baseUrl); // 環境変数からURLを構築
     final headers = {"Content-Type": "application/json"};
     final body = json.encode({
       'ids': widget.selectedPreferenceIds,
