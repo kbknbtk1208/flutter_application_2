@@ -1,0 +1,122 @@
+[
+  {
+    "id": "pref_001",
+    "name": "Hanami Picnic",
+    "cultureId": "culture_001",
+    "assetPath": "assets/images/preference/hanami_picnic.jpg"
+  },
+  {
+    "id": "pref_002",
+    "name": "Cherry Blossom Tunnel",
+    "cultureId": "culture_001",
+    "assetPath": "assets/images/preference/sakura_tunnel.jpg"
+  },
+  {
+    "id": "pref_003",
+    "name": "Night Sakura (Yozakura)",
+    "cultureId": "culture_001",
+    "assetPath": "assets/images/preference/yozakura.jpg"
+  },
+  {
+    "id": "pref_004",
+    "name": "Fireworks Display",
+    "cultureId": "culture_002",
+    "assetPath": "assets/images/preference/fireworks.jpg"
+  },
+  {
+    "id": "pref_005",
+    "name": "Wearing Yukata",
+    "cultureId": "culture_002",
+    "assetPath": "assets/images/preference/yukata.jpg"
+  },
+  {
+    "id": "pref_006",
+    "name": "Festival Food Stalls",
+    "cultureId": "culture_002",
+    "assetPath": "assets/images/preference/food_stalls.jpg"
+  },
+  {
+    "id": "pref_007",
+    "name": "Mountain Hiking in Autumn",
+    "cultureId": "culture_003",
+    "assetPath": "assets/images/preference/mountain_hiking_autumn.jpg"
+  },
+  {
+    "id": "pref_008",
+    "name": "Maple Leaf Viewing (Momijigari)",
+    "cultureId": "culture_003",
+    "assetPath": "assets/images/preference/maple_leaves.jpg"
+  },
+  {
+    "id": "pref_009",
+    "name": "Ginkgo Tree Lined Street",
+    "cultureId": "culture_003",
+    "assetPath": "assets/images/preference/ginkgo_street.jpg"
+  },
+  {
+    "id": "pref_010",
+    "name": "Skiing / Snowboarding",
+    "cultureId": "culture_004",
+    "assetPath": "assets/images/preference/skiing.jpg"
+  },
+  {
+    "id": "pref_011",
+    "name": "Snow Hut Village (Kamakura)",
+    "cultureId": "culture_004",
+    "assetPath": "assets/images/preference/kamakura_village.jpg"
+  },
+  {
+    "id": "pref_012",
+    "name": "Winter Illuminations",
+    "cultureId": "culture_004",
+    "assetPath": "assets/images/preference/winter_illumination.jpg"
+  },
+  {
+    "id": "pref_013",
+    "name": "Zen Temple Atmosphere",
+    "cultureId": "culture_005",
+    "assetPath": "assets/images/preference/zen_temple.jpg"
+  },
+  {
+    "id": "pref_014",
+    "name": "Shrine Visit & Fortune Slip (Omikuji)",
+    "cultureId": "culture_005",
+    "assetPath": "assets/images/preference/shrine_visit_omikuji.jpg"
+  },
+  {
+    "id": "pref_015",
+    "name": "Tea Ceremony Experience",
+    "cultureId": "culture_006",
+    "assetPath": "assets/images/preference/tea_ceremony.jpg"
+  },
+  {
+    "id": "pref_016",
+    "name": "Sushi / Sashimi",
+    "cultureId": "culture_007",
+    "assetPath": "assets/images/preference/sushi_sashimi.jpg"
+  },
+  {
+    "id": "pref_017",
+    "name": "Ramen Noodles",
+    "cultureId": "culture_007",
+    "assetPath": "assets/images/preference/ramen.jpg"
+  },
+  {
+    "id": "pref_018",
+    "name": "Outdoor Hot Spring (Rotenburo)",
+    "cultureId": "culture_008",
+    "assetPath": "assets/images/preference/rotenburo.jpg"
+  },
+  {
+    "id": "pref_019",
+    "name": "City Observation Deck View",
+    "cultureId": "culture_009",
+    "assetPath": "assets/images/preference/observation_deck.jpg"
+  },
+  {
+    "id": "pref_020",
+    "name": "Akihabara Electric Town",
+    "cultureId": "culture_010",
+    "assetPath": "assets/images/preference/akihabara.jpg"
+  }
+]

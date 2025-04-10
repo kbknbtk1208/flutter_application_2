@@ -1,0 +1,62 @@
+[
+  {
+    "id": "culture_001",
+    "name": "Cherry Blossoms",
+    "month": [3, 4],
+    "assetPath": "assets/images/culture/cherry_blossoms.jpg"
+  },
+  {
+    "id": "culture_002",
+    "name": "Summer Festivals",
+    "month": [7, 8],
+    "assetPath": "assets/images/culture/summer_festival.jpg"
+  },
+  {
+    "id": "culture_003",
+    "name": "Autumn Leaves",
+    "month": [10, 11],
+    "assetPath": "assets/images/culture/autumn_leaves.jpg"
+  },
+  {
+    "id": "culture_004",
+    "name": "Snow Scenery",
+    "month": [12, 1, 2],
+    "assetPath": "assets/images/culture/snow_scenery.jpg"
+  },
+  {
+    "id": "culture_005",
+    "name": "Temples and Shrines",
+    "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetPath": "assets/images/culture/temples_shrines.jpg"
+  },
+  {
+    "id": "culture_006",
+    "name": "Japanese Gardens",
+    "month": [3, 4, 5, 6, 7, 8, 9, 10, 11],
+    "assetPath": "assets/images/culture/japanese_garden.jpg"
+  },
+  {
+    "id": "culture_007",
+    "name": "Traditional Cuisine",
+    "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetPath": "assets/images/culture/japanese_cuisine.jpg"
+  },
+  {
+    "id": "culture_008",
+    "name": "Hot Springs (Onsen)",
+    "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetPath": "assets/images/culture/onsen.jpg"
+  },
+  {
+    "id": "culture_009",
+    "name": "Modern Cityscapes",
+    "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetPath": "assets/images/culture/modern_cityscape.jpg"
+  },
+  {
+    "id": "culture_010",
+    "name": "Pop Culture (Anime/Manga)",
+    "month": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "assetPath": "assets/images/culture/pop_culture.jpg"
+  }
+]
