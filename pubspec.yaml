@@ -65,6 +65,7 @@ flutter:
     - assets/images/
     - assets/images/culture/
     - assets/images/preference/
+    - assets/images/spot/
     - assets/preference_images.json
     - assets/japan_culture.json
     - .env # Add .env file to assets

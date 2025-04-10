@@ -19,7 +19,8 @@ app.post("/", (req, res) => {
   };
 
   console.log("Received POST request. Sending dummy data:", dummyData);
-  res.json(dummyData);
+  // Flutter側はリストを期待しているので、配列でラップして返す
+  res.json([dummyData]);
 });
 
 app.listen(port, () => {
