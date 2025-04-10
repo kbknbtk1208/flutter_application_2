@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart'; // Import flutter_dotenv
 
+import 'screens/map_screen_dart.dart';
 import 'screens/welcome_screen.dart'; // Import Firebase Core
+
+import 'dart:io' show Platform;
 
 void main() async {
   // Make main async
